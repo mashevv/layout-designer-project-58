@@ -53,111 +53,62 @@ h3  {
   font-size: 34px;
 }
 
-/*.header {
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  justify-content: center;
-
-  width: 100%;
- 
-  background-color: var(--light);
-}
-
-.header::before {
-  position: absolute;
-
-  content: "";
-
-  background-image: url(../img/background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  width: 100%;
-  height: 100%;
-
-  opacity: 0.1;
-
-}
 
 .header-section {
+  position: relative;
+
   width: 1110px;
+
   padding-top: 100px;
   padding-bottom: 100px;
 
+  
 }
 
-.htitle {
-  position: absolute;
-  z-index: 2;
-  font-family: "Neucha";
-}
-
-.mainimg {
-  position: absolute;
-
-  z-index: 1;
-
-  height: 525px;
-  top: 55px;
-  right: -270px;
-}
-
-
-
-
-
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.flex-container div {
-  width: 50%;
-}
-
-.hello {
-  display: block;
-
-  color: #fff;
-} */
 
 .header {
   position: relative;
+
+  z-index: -2;
   display: flex;
   flex-direction: column;
+
   align-items: center;
   justify-content: center;
   width: 100%;
+
   background-color: var(--light);
+
+  overflow: hidden;
 }
 
 .header::before {
   position: absolute;
+
   background-image: url(../img/background.png);
   background-repeat: no-repeat;
   background-size: cover;
+
+  z-index: -1;
+
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   content: "";
   opacity: 0.1;
+
 }
 
-.header-section {
-  position: relative;
-  width: 1110px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
 
 .htitle {
-  z-index: 2;
-  font-family: "Neucha";
   position: relative;
+
+  z-index: 1;
+  font-family: "Neucha";
+  
 }
+
 
 .titleorang {
   color: var(--main);
@@ -166,7 +117,7 @@ h3  {
 .mainimg {
   position: absolute;
 
-  z-index: 1;
+  z-index: 0;
 
   height: 525px;
   top: 55px;
@@ -174,7 +125,6 @@ h3  {
 }
 
 .flex-container {
-  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -187,35 +137,45 @@ h3  {
 .part1 {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
   flex: 1;
+    
 }
 
 .part2 {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
   flex: 1;
+  
+}
+
+
+.button {
+  display: flex;
+  flex-shrink: 0;
+
+  height: 30px;
+  width: 110px;
+  border: none;
+  margin-top: 40px;
+
+  padding: 12px 24px;
+ 
+  text-decoration: none;
+  
+
+  background: var(--main);
+  color: #fff;
+
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Open Sans";
+
 }
 
 
 
-.header-butt {
-width: 148px;
-height: 49px;
-top: 765px;
-left: 735px;
-right: 557px;
-padding: 11 23 12 24;
-gap: 12px;
-margin-top: 40px;
+  
 
-font-weight: 700;
-font-family: "Open Sans";
-font-size: 16px;
 
-color: var(--white);
-background-color: var(--main);
-}
 
 
